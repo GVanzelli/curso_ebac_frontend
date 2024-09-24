@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html com JS</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>B > A</h1>
+        <h2>Nesse site, temos que inserir dois números, A e B, e o número B tem que ser Maior que A</h2>
+        <form id="form">
+            <input type="number" id="valor-A" required placeholder="Valor A" />
+            <input type="number" id="valor-B" required placeholder="Valor B" />
+            <button id="btn" type="submit">Verificar</button>
+        </form>
+        <p class="error-message"> Formulário inválido, o valor A é maior que o valor B </p>
+        <p class="success-message"> Formulário válido, o valor B é maior que o valor A</p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

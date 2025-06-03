@@ -1,0 +1,1 @@
+Nessa atividade fizemos uma lista de tarefas, no qual o usuário inseri a atividade que ele tem que realizar, após isso ela vira uma <li> que ao clicar sobre ela fica riscada, indicando que o usuário realizou a tarefa. 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <form id="form">
+        <input type="text" id="nova-atividade" placeholder="Inserir atividade">
+        <button onclick="adicionarItem()">Adicionar</button>
+        <h3>Tarefas a serem realizadas</h3>
+        <ul id="lista"></ul>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+header .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+    background-color: #1c50a3;
+    color: white;
+}
+
+.menu a {
+    padding-right: 16px;
+    color: white; 
+    text-decoration: none;
+}
+
+.linha_div {
+    border-top: 2px solid #1c50a3;
+    margin: 8px 0;
+}
+
+.secaoSobre {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin:30px 0;
+}
+
+.secaoSobre img {
+    max-width: 100%;
+    padding-right: 32px;
+    padding-bottom: 16px;
+}
+
+.sobre {
+    max-width: 100%;
+}
+
+.sobre h2 {
+    color: #1c50a3;
+}
+
+.sobre p {
+    font-size: 1.5em;
+}
+
+.secaoProdutos h2 {
+    color: #1c50a3;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.75%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produtos img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.item h3 {
+    font-size: 1.2em;
+}
+.item p {
+    font-size: 1em;
+    padding: 8px;
+}
+
+.item button{
+    width: 100%;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c50a3;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.item button:hover {
+    cursor: pointer;
+}
+
+.mensagem {
+    color: #1c50a3;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .menu > a {
+        display: block;
+        margin: 8px;
+    }
+
+    .secaoSobre {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .secaoSobre img {
+        padding-right: 0;
+    }
+
+    .secaoProdutos {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .produtos {
+        display: block;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        font-size: 1em;
+    }
+    
+}
